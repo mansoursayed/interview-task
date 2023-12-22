@@ -1,0 +1,21 @@
+
+ <div class="container">
+  <div class="file-input-container">
+    <div class="mat-form-field">
+      <label for="fileInput" class="file-input-label">
+        <span>Choose File</span>
+        <input #fileInput accept=".txt" type="file" id="fileInput" (change)="selectFile($event)" name="fileInput" />
+        <span *ngIf="currentFile" class="progress">{{ progress }}% Processed </span>
+      </label>
+    </div>
+  </div>
+
+  <div *ngIf="message" class="message">
+    {{ message }}
+  </div>
+
+  <div *ngIf="fileContent">
+    <h2>Processed Content</h2>
+    <div class="processed-content" [innerHTML]="fileContent"></div>
+  </div>
+</div>

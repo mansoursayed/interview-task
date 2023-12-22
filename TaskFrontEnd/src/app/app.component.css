@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  height: 60px;
+  background-color: #ececec;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  height: 60px;
+  background-color: #ececec;
+}
+
+.content {
+  display: flex;
+  height: calc(100% - 120px);
+  overflow: hidden;
+  padding: 0px 30px 0px 30px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column
+}
+
+.fileUploader {
+  width: 50%;
+  overflow: auto;
+  max-height: auto;
+}
